@@ -1005,15 +1005,19 @@ body {
 
 @media (max-width: 768px) {
     .video__content {
-        flex-direction: column; /* empilha os elementos */
+        display: flex;         /* garante que seja flex */
+        flex-direction: column; /* organiza em coluna */
     }
 
     .video__player {
         order: 1; /* fica primeiro */
+        width: 100%; /* ocupa largura total */
     }
 
     .video__benefits {
         order: 2; /* fica depois do vídeo */
+        width: 100%; /* ocupa largura total */
+        margin-top: 1.5rem; /* espaço entre vídeo e benefícios */
     }
 }
 
