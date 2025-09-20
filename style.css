@@ -1003,6 +1003,20 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .video__content {
+        flex-direction: column; /* empilha os elementos */
+    }
+
+    .video__player {
+        order: 1; /* fica primeiro */
+    }
+
+    .video__benefits {
+        order: 2; /* fica depois do vídeo */
+    }
+}
+
 /* ===== UTILITY CLASSES ===== */
 .text-center { text-align: center; }
 .text-left { text-align: left; }
@@ -1042,16 +1056,4 @@ body {
     background: var(--primary-dark);
 }
 
-@media (max-width: 768px) {
-    .video__content {
-        flex-direction: column; /* empilha os elementos */
-    }
 
-    .video__player {
-        order: 1; /* fica primeiro */
-    }
-
-    .video__benefits {
-        order: 2; /* fica depois do vídeo */
-    }
-}
